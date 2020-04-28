@@ -1,0 +1,287 @@
+/*-----------------------------------*/
+/*BASIC*/
+/*-----------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato' , 'Arial' , sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+}
+/*-----------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*-----------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+/*-----------------------------------*/
+/*HEADINGS*/
+/*-----------------------------------*/
+
+
+
+h1,h3{
+    margin: 0;
+    color: rgb(224, 224, 224);
+    font-weight: 398;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h1{
+    font-size: 360%;
+    animation-duration: 2s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+}
+
+
+
+h3{
+    margin-bottom: 15px;
+    font-size: 150%;
+    
+}
+
+h2{
+    margin-top: 30px;
+    color: rgb(224, 224, 224);
+    font-weight: 389;
+    letter-spacing: 3px;
+    font-size: 220%
+    
+}
+
+/*-----------------------------------*/
+/*LOGO*/
+/*-----------------------------------*/
+
+.logo{
+    height: 90px;
+    width: auto;
+    float: left;
+    transform: translate(-115%);
+    margin-top: 20px;
+}
+
+
+/*-----------------------------------*/
+/*BUTTONS*/
+/*-----------------------------------*/
+
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.5s, border 0.2s, color 0.2s;
+   
+}
+
+
+.btn-exp:link,
+.btn-exp:visited{
+        background-color:transparent;
+        border: 2px solid #d6d6d6;
+        color: #ffffff;
+}
+
+    
+
+
+.btn-exp:hover,
+.btn-exp:active{
+    background-color: #C91F37;
+    border-color: #C91F37;
+}
+
+/*-----------------------------------*/
+/*HEADER*/
+/*-----------------------------------*/
+
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(165, 38, 68, 0.55)) ,url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60% , -50%); 
+}
+
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 45px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 5 px 0px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 100%;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 3px solid #C91F37;
+}
+
+
+
+/*-----------------------------------*/
+/*MEALS*/
+/*-----------------------------------*/
+
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: auto;
+    height: auto;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img{
+    opacity: 1;
+    width: 100%;
+    transform: scale(1.15);
+    height: auto;
+    transition: transform 1s;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+
+/*-----------------------------------*/
+/*CONTACTS*/
+/*-----------------------------------*/
+
+
+.contact-details{
+    margin-top: 60px;
+    width: auto;
+    position: absolute;
+}
+
+table,th,td{
+    border: 3.5px solid #E68364;
+    border-collapse: collapse;
+}
+
+
+
+
+/*-----------------------------------*/
+/*RECIPE PHOTOS*/
+/*-----------------------------------*/
+
+.recipe-back{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    height: 220vh;
+
+
+}
+.recipe-photo{
+    padding-top: 70px;
+}
+
+.para{
+    color: azure;
+    font-size: 30px;
+    font-weight: 395 ;
+}
+
+.para p{
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.para b{
+    font-size: 40px;
+    color: #fff;
+    border-bottom: 2px solid #c91f37;
+    text-transform: uppercase;
+}
+
+.recipe-photo img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 250px;
+    margin-left: 12%;
+    border-radius: 20px;
+    border: 2.12px solid #fff;
+
+}
+
+.recipe-photo h3{
+    margin-top: 8%;
+    float: right;
+    font-size: 60px;
+    margin-right:30%;
+    margin-bottom: 2px;
+    border-bottom:4px solid #c91f37;
+    
+
+}
+
+
+
